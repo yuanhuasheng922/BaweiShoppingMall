@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <CheckBox
+        android:id="@+id/shopping_adapter_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_10"
+        />
+
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_290"
+        android:layout_height="@dimen/dp_100"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginRight="@dimen/dp_24"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        >
+
+    <ImageView
+        android:id="@+id/shopping_adapter_image"
+        android:layout_width="@dimen/dp_90"
+        android:layout_height="@dimen/dp_80"
+       android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:src="@mipmap/ic_launcher"
+        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/shopping_adapter_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我收到卡卡管卡时刻更fafafagagagagagagagagagagagagag"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_8"
+            android:maxLines="2"
+            />
+                <TextView
+                    android:id="@+id/shopping_adapter_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="价格啊"
+                    android:layout_marginTop="@dimen/dp_65"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:textColor="#ff0000"
+                    />
+        <com.example.yuan.baweishoppingmall.customview.CustomView
+            android:id="@+id/shopping_adapter_cstom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_10"
+            >
+
+
+        </com.example.yuan.baweishoppingmall.customview.CustomView>
+
+            </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

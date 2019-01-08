@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HomeActivity"
+    android:orientation="vertical">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <android.support.v4.view.ViewPager
+           android:id="@+id/homeactirity_viewpager"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_above="@+id/homeactirity_radiogroup"
+           >
+
+
+       </android.support.v4.view.ViewPager>
+       <RadioGroup
+           android:id="@+id/homeactirity_radiogroup"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_alignParentBottom="true"
+           android:background="@mipmap/bg_homepage_bottom"
+           android:layout_weight="1  "
+
+           >
+           <RadioButton
+               android:id="@+id/homeactirity_home"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:button="@null"
+               android:layout_gravity="center"
+               android:layout_marginLeft="@dimen/dp_20"
+               android:layout_marginTop="@dimen/dp_13"
+               android:background="@drawable/imagechange"
+               />
+           <RadioButton
+               android:id="@+id/homeactirity_circle"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:button="@null"
+               android:layout_gravity="center"
+               android:layout_marginLeft="@dimen/dp_45"
+               android:layout_marginTop="@dimen/dp_13"
+               android:background="@drawable/circlechange"
+               />
+           <RadioButton
+               android:id="@+id/homeactirity_shopping"
+               android:layout_width="@dimen/dp_60"
+               android:layout_height="@dimen/dp_60"
+               android:button="@null"
+               android:layout_marginLeft="@dimen/dp_33"
+               android:layout_gravity="center"
+               android:layout_marginTop="@dimen/dp_7"
+               android:background="@mipmap/tab_home_bottom_gouwuche"
+               />
+           <RadioButton
+               android:id="@+id/homeactirity_bill"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:button="@null"
+               android:layout_gravity="center"
+               android:layout_marginTop="@dimen/dp_13"
+               android:layout_marginLeft="@dimen/dp_35"
+               android:background="@drawable/billchange"
+               />
+           <RadioButton
+               android:id="@+id/homeactirity_my"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:button="@null"
+               android:layout_marginTop="@dimen/dp_13"
+               android:layout_gravity="center"
+               android:layout_marginLeft="@dimen/dp_40"
+               android:background="@drawable/mychange"
+               />
+       </RadioGroup>
+
+   </RelativeLayout>
+</LinearLayout>
